@@ -141,4 +141,19 @@ body .success_error_modele > div > span {
 }
 body .success_error_modele.active {
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  body .transactions, body form {
+    width: 100% !important;
+  }
+  body .transactions {
+    padding-top: 3rem;
+  }
+  body .transactions::before {
+    position: absolute;
+    top: 0.5rem;
+  }
 }/*# sourceMappingURL=paystack_scss.css.map */
